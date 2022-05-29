@@ -8,17 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href ="index.css">
-    <title>La Conf</title>
+    <title>UFC Conf</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="57">
 
     <!-- header  -->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="navbar navbar-expand-lg navbar-dark  sticky-top">
 
       <div class="container">
 
           <a class="navbar-brand" href="#">
-            <img src="/la_conf/assets/images/platzi-logo.png">
+            <img src="assets/images/UFC_Conf.svg">
            </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,20 +26,20 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Conferencia</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="#main">Conferencia</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Oradores</a>
+                <a class="nav-link" href="#speakers">Oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Lugar y Fecha</a>
+                <a class="nav-link" href="#place-time">Lugar y Fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sé Orador</a>
+                <a class="nav-link" href="#conviertete-en-orador">Sé Orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-platzi" href="#">Tickets</a>
+                <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra" >Tickets</a>
               </li>
             </ul>
           </div>
@@ -54,29 +54,29 @@
       <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="/la_conf/assets/images/hawaii.jpg" alt="First slide">
+            <img class="d-block w-100" src="assets/images/ufc_holloway.png" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/la_conf/assets/images/hawaii2.jpg" alt="Second slide">
+            <img class="d-block w-100" src="assets/images/ufc_ufc_270.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/la_conf/assets/images/hawaii3.jpeg" alt="Third slide">
+            <img class="d-block w-100" src="assets/images/ufc_ufc_274.png" alt="Third slide">
           </div>
           <div class="overlay">
             <div class="container">
               <div class="row align-items-center">
                 <div class="col-md-6 offset-md-6 text-center text-md-right">
-                  <h1>Platzi conf Hawaii</h1>
-                  <p class="d-none d-md-block">!Platzi conf llega por primera vez a hawaii!, <br>
+                  <h1>UFC conf México</h1>
+                  <p class="d-none d-md-block">¡UFC conf llega por primera vez a méxico, <br>
                     Un evento para compartir con nuestra comunidad el conocimiento y experiencia
-                    de los expertos que están creando el futuro de Internet.
-                    Ven a conocer a miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores de primer nivel que tenemos para ti.
+                    de los expertos que están creando el futuro de las MMA.
+                    Ven a conocer a los speackes, a otros practicantes de MMA y a los oradores de primer nivel que tenemos para ti.
                     Te esperamos!
                   </p>
                   <a href="#" class="btn btn-outline-light">
-                    Quiero ser orador
+                    conocer a un orador
                   </a>
-                  <button type="button" class="btn btn-platzi">Comprar Tickets</button>
+                  <button type="button" data-toggle="modal" data-target="#modalCompra" class="btn btn-platzi">Comprar Tickets</button>
                 </div>
               </div>
             </div>
@@ -109,47 +109,45 @@
         <div class="row" >
           <div class="col-md-6 col-lg-4 mb-4 " style="display: flex; justify-content: center;" >
               <div class="card" style="width: 18rem; display: flex; ">
-                <img class="card-img-top" src="/la_conf//assets/speakers/sacha.jpg" alt="Card image cap">
+                <img class="card-img-top" src="assets/speakers/ufc_moreno.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title mb-0">Sacha Lifszyc</h5>
+                    <h5 class="card-title mb-0">Brandon Moreno</h5>
                     <p class="card-text">
                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <button href="#" class="btn btn-platzi">Go somewhere</button>
                 </div>
               </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4" style="display: flex; justify-content: center;">
             <div class="card" style="width: 18rem; display: flex; " >
-              <img class="card-img-top" src="/la_conf//assets/speakers/leonidas.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="assets/speakers/ufc_ortega.png" alt="Card image cap">
               <div class="card-body">
-                  <h5 class="card-title mb-0">Leonidas</h5>
+                  <h5 class="card-title mb-0">Brian Ortega</h5>
                   <p class="card-text">
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                      eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <button href="#" class="btn btn-platzi">Go somewhere</button>
               </div>
             </div>
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4 " style="display: flex; justify-content: center;">
           <div class="card" style="width: 18rem; display: flex; ">
-            <img class="card-img-top" src="/la_conf//assets/speakers/freddy.jpeg" alt="Card image cap">
+            <img class="card-img-top" src="assets/speakers/ufc_pantera.png" alt="Card image cap">
             <div class="card-body">
                 
                 <div class="badges">
-                  <span class="badge badge-warning">JavaScript</span>
-                  <span class="badge badge-info">React</span>
                 </div>
-                <h5 class="card-title">Freddie Vega</h5>
+                <h5 class="card-title">Yahir Rodriguez</h5>
                 <p class="card-text">
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <button href="#" class="btn btn-platzi">Go somewhere</button>
             </div>
           </div>
       </div>
@@ -157,14 +155,14 @@
 
       <div class="col-md-6 col-lg-4 mb-4 " style="display: flex; justify-content: center;">
         <div class="card" style="width: 18rem; display: flex; ">
-          <img class="card-img-top" src="/la_conf//assets/speakers/cvander.jpeg" alt="Card image cap">
+          <img class="card-img-top" src="assets/speakers/ufc_victor.png" alt="Card image cap">
           <div class="card-body">
-              <h5 class="card-title mb-0">Christian Van Der Heist</h5>
+              <h5 class="card-title mb-0">Victor Dávila</h5>
               <p class="card-text">
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                  eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <button href="#" class="btn btn-platzi">Go somewhere</button>
           </div>
         </div>
     </div>
@@ -182,18 +180,17 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-lg-6 pl-0 pr-0">
-            <img src="/la_conf/assets/images/honolulu.jpg" alt="Ciudad de Honolulu">         
+            <img src="assets/images/ufc_rose.png" alt="Ciudad de Honolulu">         
           </div>         
           <div class="col-12 col-lg-6 pt-4 pb-4">
-            <h2>Honolulu - Octubre 2025</h2>
-            <p>Honolulu, en la costa sur de la isla de Oahu, es la capital de Hawái y la vía de acceso
-               a la cadena de islas de EE.UU. El barrio de Waikiki es un centro de restaurantes, 
-               vida nocturna y comercio, famoso por su icónica playa con forma de medialuna bordeada
-               de palmeras y hoteles de muchos pisos y con el cráter volcánico Diamond Head en lo alto
-               a la distancia. Los sitios relacionados con el ataque a Pearl Harbor en la Segunda
-               Guerra Mundial incluyen el USS Arizona Memorial.
+            <h2>Chihuahua - Octubre 2025</h2>
+            <p>La ciudad de Chihuahua es la capital del estado de Chihuahua en el noroeste de México. 
+               Es conocida por la Catedral de Chihuahua española de estilo barroco y el Palacio de Gobierno
+               del siglo XVIII, un nuevo edificio de gobierno con enormes murales que ilustran eventos 
+               históricos importantes de México. La ciudad también alberga el extremo este del ferrocarril 
+               Chepe, que recorre los desfiladeros teñidos de verde del área del Cañón del Cobre.
             </p>
-            <a class="btn btn-outline-light" href="https://www.google.com/search?q=honolulu&rlz=1C1ALOY_esMX956MX956&oq=honolulu&aqs=chrome..69i57j46i433i512j0i512l6j46i199i291i512j0i512.2506j0j15&sourceid=chrome&ie=UTF-8"> Conóce más </a>
+            <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Chihuahua"> Conóce más </a>
           </div>
         </div>
         
@@ -210,16 +207,15 @@
         <div class="row">
           <div class="col text-uppercase text-center">
 
-            <small > conviertete en un</small>
-            <h2>orador</h2>
+            <small > Conoce a nuestros</small>
+            <h2>oradores</h2>
           </div>          
         </div>
 
         <div class="row">
 
           <div class="col text-center">
-            Anotate como orador para dar una charla ignite.
-            ¡Cuéntanos de que quieres hablar!.
+            Anotate para conocer a nuestrso oradores ¡Cuéntanos con quien quieres hablar!.
           </div>
         </div>
 
@@ -236,9 +232,9 @@
               </div>
               <div class="form-row">
                 <div class="col">
-                  <textarea name="text" class="form-control form-control-lg" placeholder="¿sobre que quieres hablar?"></textarea>
+                  <textarea name="text" class="form-control form-control-lg" placeholder=""></textarea>
                   <small class="form-text text-muted">
-                    *Recuerda incluir un titulo para tu charla
+                    
                   </small>
                   
                 </div>               
@@ -289,6 +285,51 @@
       </footer>
 
       <!-- /footer -->
+
+      <!-- Modal -->
+
+      <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Comprar Tickets</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <form action="">
+                <div class="form-row">
+                  <div class="form-group col">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              
+              <div class="alert alert-warning" role="alert">
+                Recibirás un correo de confirmación si sales sorteado.
+              </div>
+
+
+            </div>
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- /Modal -->
+    
     
 
     <!-- Optional JavaScript -->
@@ -296,5 +337,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     <script src="index.js"></script> 
+  
   </body>
 </html>

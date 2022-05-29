@@ -1,14 +1,16 @@
 .text-platzi {
-    color: #97c93e !important;
+    color: #ff0000 !important;
 }
-
+.navbar {
+    background-color:#000000 ;
+}
 .btn-platzi { 
-    background-color:#97c93e ;
+    background-color:#e66969;
     color:white;
 }
 
 .btn-platzi:hover {
-    background-color: #6e922e;
+    background-color:#fc0a0a;
 }
 
 header img {
@@ -40,7 +42,7 @@ header img {
     height: 100%;
 }
 #place-time {
-    background-color: #343a40;
+    background-color: rgba(0,0,0);
     color: white;
     
 }
@@ -51,7 +53,7 @@ header img {
 }
 
 #footer {
-    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+    background-color: rgba(0,0,0);
 }
 
 #footer a {
